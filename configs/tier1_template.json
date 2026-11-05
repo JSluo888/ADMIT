@@ -1,0 +1,48 @@
+{
+ "name": "<cohort>",
+ "adapter": "table",
+ "table": "${ADMIT_DATA_ROOT}/tier1/<cohort>/<cells table: parquet|csv|npz>",
+ "patient_col": "<patient id column>",
+ "label_col": "<cell-type column>",
+ "label_map_file": "${ADMIT_RUNS}/round2/configs/<cohort>_label_map.json (raw label -> 17-node name or null)",
+ "marker_columns": {
+  "<raw column>": "<vocabulary name, e.g. CD3e, PanCK, aSMA, HLADR>"
+ },
+ "transform": "log1p | arcsinh:<cofactor> | none (match the cohort intensity scale)",
+ "panel_bank": "${ADMIT_RUNS}/round2/configs/<cohort>_panel_bank.json (auto-generated before results)",
+ "splits": {
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "fractions": [
+   15,
+   12,
+   8
+  ]
+ },
+ "train_cap": 2000,
+ "heads": [
+  "logistic",
+  "xgb"
+ ],
+ "_usage": "python experiments/round2/run_cohort.py --config <this file> --head logistic --seeds 0-19 ; then experiments/round2/summarize_round2.py (add the cohort name to main())"
+}

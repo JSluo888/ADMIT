@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Data, run outputs, models and figure assets are never committed
+data/
+runs/
+models/
+figures/out/
+figures/assets/
+*.npz
+*.npy
+*.parquet
+*.h5ad
+*.h5
+*.csv
+*.csv.gz
+*.tif
+*.tiff
+*.ome.tif
+*.zarr
+*.ubj
+*.pt
+*.pdf
+*.png
+*.svg

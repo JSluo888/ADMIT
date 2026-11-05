@@ -1,0 +1,919 @@
+{
+ "_doc": "Per-cohort fixed choices (pre-specified before any result). transform: arcsinh:5 for IMC/MIBI raw counts; arcsinh_p99:0.2 for size-normalised / rescaled (non-count) MIBI/IMC tables (cofactor = 0.2 x training-cell p99 per marker); fluorescence: QC.json-documented transform, else none (z-score only). Always followed by a z-score fit on training-patient cells; absent marker = 0 after z-scoring.",
+ "cords2024_nsclc_imc": {
+  "modality": "IMC counts",
+  "transform": "arcsinh:5",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "danenberg2022_metabric_imc": {
+  "modality": "IMC counts",
+  "transform": "arcsinh:5",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "launonen2022_hgsc_tcycif": {
+  "modality": "t-CyCIF, natural-log intensities (QC.json)",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "launonen2022_hgsc_tcycif__synonym": {
+  "dir": "tier1/launonen2022_hgsc_tcycif",
+  "cohort_key": "launonen2022_hgsc_tcycif",
+  "modality": "t-CyCIF, natural-log intensities",
+  "transform": "none",
+  "synonyms": {
+   "CK7": "PanCK",
+   "IBA1": "CD68"
+  },
+  "note": "SENSITIVITY ANALYSIS: CK7 satisfies the PanCK (Epithelial) requirement and IBA1 the CD68 (Myeloid/macrophage) requirement, for Launonen only; R(c) unchanged elsewhere",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "quiche_tnbc_mibi_stanford": {
+  "modality": "MIBI size-normalised",
+  "transform": "arcsinh_p99:0.2",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "quiche_tnbc_mibi_spain": {
+  "modality": "MIBI size-normalised",
+  "transform": "arcsinh_p99:0.2",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "neotrip_tnbc_imc": {
+  "modality": "IMC 16-bit scaled (non-count)",
+  "transform": "arcsinh_p99:0.2",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "piyadasa2025_glioma_mibi_immune": {
+  "modality": "MIBI size-normalised",
+  "transform": "arcsinh_p99:0.2",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "piyadasa2025_glioma_mibi_tumor": {
+  "modality": "MIBI size-normalised",
+  "transform": "arcsinh_p99:0.2",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "kulasinghe2026_nsclc_pcf": {
+  "modality": "PhenoCycler 8-bit (QuPath)",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ],
+  "name_map_from_qc": "panel_diff.author_to_coral"
+ },
+ "monkman2026_nsclc_pcf": {
+  "modality": "PhenoCycler 8-bit (cpsam mask means)",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "fischer2023_breast_imc": {
+  "modality": "IMC raw CellProfiler mean intensity",
+  "transform": "arcsinh:5",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "meyer2025_tnbc_imc": {
+  "modality": "IMC counts",
+  "transform": "arcsinh:5",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "pairs": {
+  "piyadasa_immune_vs_tumor": {
+   "a": "piyadasa2025_glioma_mibi_immune",
+   "b": "piyadasa2025_glioma_mibi_tumor",
+   "same_patients": true,
+   "id": "patient_id identical across views (QC.panel_views)",
+   "splits": {
+    "fractions": [
+     40,
+     20,
+     40
+    ],
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "protocol": "real_panel_change_same_patients"
+  },
+  "kulasinghe_vs_monkman": {
+   "a": "kulasinghe2026_nsclc_pcf",
+   "b": "monkman2026_nsclc_pcf",
+   "same_patients": false,
+   "id": "disjoint patients (different TMAs, QC.patient_overlap); per-cohort role split",
+   "splits": {
+    "fractions": [
+     40,
+     20,
+     40
+    ],
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "protocol": "new_cohort_panel_change"
+  },
+  "quiche_spain_to_stanford": {
+   "a": "quiche_tnbc_mibi_spain",
+   "b": "quiche_tnbc_mibi_stanford",
+   "same_patients": false,
+   "id": "site shift, identical marker sets",
+   "splits": {
+    "fractions": [
+     40,
+     20,
+     40
+    ],
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "protocol": "site_shift",
+   "directions": [
+    "ab"
+   ]
+  },
+  "mcc_discovery_vs_validation": {
+   "a": "mcc_discovery_haist_codex",
+   "b": "mcc_validation_sizun_codex",
+   "same_patients": false,
+   "id": "different patients (discovery Haist vs validation Sizun); per-cohort role split",
+   "protocol": "new_cohort_panel_change",
+   "splits": {
+    "fractions": [
+     40,
+     20,
+     40
+    ],
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  "lin_cycif_vs_orion": {
+   "a": "lin2023_crc_cycif",
+   "b": "orion",
+   "same_patients": true,
+   "id": "CyCIF CRC(n) = Orion CRC(n-1), 16 shared patients",
+   "status": "PROVISIONAL: inferred CyCIF labels; ambiguous inferred codes coarsened (code 5 -> Immune)",
+   "splits": {
+    "fractions": [
+     40,
+     20,
+     40
+    ],
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "protocol": "real_panel_change_same_patients",
+   "allow_not_ready": true
+  }
+ },
+ "lin2023_crc_cycif": {
+  "modality": "t-CyCIF raw intensities",
+  "transform": "arcsinh:150",
+  "exclude_columns": [
+   "CDX2"
+  ],
+  "note": "PROVISIONAL, pair only (lin_orion.py)"
+ },
+ "orion": {
+  "modality": "Orion X_arc cache",
+  "transform": "none"
+ },
+ "mcc_discovery_haist_codex": {
+  "modality": "CODEX uint8 store means",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ],
+  "name_map": {
+   "CA-IX": "CA9",
+   "MHC-I": "MHCI",
+   "IL-10": "IL10",
+   "TCF1/7": "TCF17"
+  }
+ },
+ "mcc_validation_sizun_codex": {
+  "modality": "CODEX uint16 raw means",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb",
+   "mlp"
+  ]
+ },
+ "chl_mibi_stanford": {
+  "modality": "MIBI size-normalised (denoised)",
+  "transform": "arcsinh_p99:0.2",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "indepth_dlbcl_codex": {
+  "modality": "CODEX author-scaled [0,1]",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "gupta2026_normal_breast_imc": {
+  "dir": "tier3_std/gupta2026_normal_breast_imc",
+  "modality": "IMC counts",
+  "transform": "arcsinh:5",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "einhaus2023_oscc_imc_uop": {
+  "dir": "tier3_std/einhaus2023_oscc_imc_uop",
+  "modality": "IMC, author arcsinh (cofactor 1) already applied",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "einhaus2023_oscc_imc_sta": {
+  "dir": "tier3_std/einhaus2023_oscc_imc_sta",
+  "modality": "IMC, author arcsinh (cofactor 1) already applied",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "jackson2020_breast_imc": {
+  "dir": "tier3_std/jackson2020_breast_imc",
+  "modality": "IMC counts (mean raw)",
+  "transform": "arcsinh:5",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "girnius2026_tcycif": {
+  "dir": "tier3_std/girnius2026_tcycif",
+  "modality": "t-CyCIF, author-rescaled [0,1] (gate 0.5)",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "meylan2026_gbm_codex": {
+  "dir": "tier3_std/meylan2026_gbm_codex",
+  "modality": "CODEX uint16 raw means",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "risom2022_dcis_mibi": {
+  "dir": "tier3_std/risom2022_dcis_mibi",
+  "modality": "MIBI, author-scaled (arcsinh + p99.9)",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "liu2022_mibi_reproducibility": {
+  "dir": "tier3_std/liu2022_mibi_reproducibility",
+  "modality": "MIBI size-normalised",
+  "transform": "arcsinh_p99:0.2",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "mccaffrey2022_tb_mibi": {
+  "dir": "tier3_std/mccaffrey2022_tb_mibi",
+  "modality": "MIBI, author-scaled",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "phillips2021_ctcl_codex": {
+  "dir": "tier3_std/phillips2021_ctcl_codex",
+  "modality": "CODEX raw means",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "monkman2024_nsclc_codex": {
+  "dir": "tier3_std/monkman2024_nsclc_codex",
+  "modality": "CODEX (QuPath) raw means",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "knott2024_tnbc_codex": {
+  "dir": "tier3_std/knott2024_tnbc_codex",
+  "modality": "CODEX raw means",
+  "transform": "none",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "hoch2022_melanoma_imc": {
+  "dir": "tier3_std/hoch2022_melanoma_imc",
+  "modality": "IMC counts",
+  "transform": "arcsinh:5",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ },
+ "cords2023_caf_imc": {
+  "dir": "tier3_std/cords2023_caf_imc",
+  "modality": "IMC counts",
+  "transform": "arcsinh:5",
+  "splits": {
+   "fractions": [
+    40,
+    20,
+    40
+   ],
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "train_cap": 2000,
+  "eval_cap": 3000,
+  "eval_cap_above": 1000000,
+  "heads": [
+   "xgb"
+  ]
+ }
+}

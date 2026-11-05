@@ -1,0 +1,10 @@
+{
+  "T_Lineage": ["CD3e"],
+  "Cytotoxic_T_Cell": ["CD3e", "CD8"],
+  "Helper_T_Cell": ["CD3e", "CD4", "FOXP3"],
+  "Regulatory_T_Cell": ["CD3e", "CD4", "FOXP3"],
+  "B_Cell": ["CD20"],
+  "Myeloid": ["CD68"],
+  "Macrophage_CD163neg": ["CD68", "CD163"],
+  "Macrophage_CD163pos": ["CD68", "CD163"]
+}

@@ -1,0 +1,1469 @@
+{
+ "created": "2026-10-28T23:18:11",
+ "orion_panel": [
+  "CD3e",
+  "CD4",
+  "CD8",
+  "CD20",
+  "CD45",
+  "CD45RO",
+  "CD68",
+  "Ki67",
+  "FOXP3",
+  "PD1",
+  "PDL1",
+  "CD163",
+  "CD31",
+  "PanCK",
+  "aSMA",
+  "Ecadherin"
+ ],
+ "orion_panel_source": "columns of X_arc with any nonzero value in crc_train_full, crc_cal and crc_test",
+ "external_cohort_panels": {
+  "hartmann": [
+   "CD3e",
+   "CD4",
+   "CD8",
+   "CD45",
+   "CD68",
+   "Ki67",
+   "PD1",
+   "CD11c",
+   "CD31",
+   "PanCK",
+   "aSMA",
+   "Ecadherin",
+   "Vimentin",
+   "CD14",
+   "CD57"
+  ],
+  "hoch": [
+   "CD3e",
+   "CD4",
+   "CD8",
+   "CD20",
+   "CD45",
+   "CD45RO",
+   "CD68",
+   "Ki67",
+   "FOXP3",
+   "PDL1",
+   "CD11c",
+   "CD45RA",
+   "aSMA",
+   "Vimentin",
+   "HLADR",
+   "CD15",
+   "CD206",
+   "MPO",
+   "CD19",
+   "CD11b",
+   "GrzB",
+   "ICOS",
+   "CD303"
+  ],
+  "immucan": [
+   "CD3e",
+   "CD4",
+   "CD8",
+   "CD20",
+   "CD45RO",
+   "CD68",
+   "Ki67",
+   "FOXP3",
+   "PD1",
+   "PDL1",
+   "CD11c",
+   "CD163",
+   "CD45RA",
+   "aSMA",
+   "Ecadherin",
+   "HLADR",
+   "CD15",
+   "CD16",
+   "CD206",
+   "MPO",
+   "CD14",
+   "CD38",
+   "GrzB",
+   "ICOS",
+   "LAG3",
+   "CD303",
+   "PDGFRb"
+  ],
+  "liu": [
+   "CD3e",
+   "CD4",
+   "CD8",
+   "CD20",
+   "CD45",
+   "CD68",
+   "CD11c",
+   "CD31",
+   "PanCK",
+   "Vimentin",
+   "HLADR",
+   "CD56"
+  ],
+  "maps": [
+   "CD4",
+   "CD8",
+   "CD20",
+   "CD45",
+   "CD45RO",
+   "CD68",
+   "FOXP3",
+   "PD1",
+   "PDL1",
+   "CD11c",
+   "CD163",
+   "CD31",
+   "CD45RA",
+   "PanCK",
+   "aSMA",
+   "Vimentin",
+   "HLADR",
+   "CD56",
+   "CD15",
+   "CD16",
+   "CD206",
+   "CD25",
+   "CD11b",
+   "CD44",
+   "GrzB",
+   "LAG3",
+   "CD57",
+   "Podoplanin"
+  ],
+  "schurch": [
+   "CD3e",
+   "CD4",
+   "CD8",
+   "CD20",
+   "CD45",
+   "CD68",
+   "FOXP3",
+   "CD163",
+   "CD31",
+   "PanCK",
+   "aSMA"
+  ],
+  "tietscher": [
+   "CD3e",
+   "CD4",
+   "CD8",
+   "CD20",
+   "CD45RO",
+   "CD68",
+   "Ki67",
+   "FOXP3",
+   "PD1",
+   "PDL1",
+   "CD11c",
+   "CD31",
+   "CD45RA",
+   "PanCK",
+   "aSMA",
+   "Ecadherin",
+   "HLADR",
+   "CD15",
+   "MPO",
+   "CD38",
+   "GrzB",
+   "ICOS",
+   "LAG3",
+   "CD303",
+   "PDGFRb"
+  ]
+ },
+ "n_panels": 50,
+ "panels": [
+  {
+   "name": "full",
+   "family": "full",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [],
+   "n_markers": 16
+  },
+  {
+   "name": "del_CD3e",
+   "family": "single",
+   "markers": [
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD3e"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_CD4",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD4"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_CD8",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD8"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_CD20",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD20"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_CD45",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD45"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_CD45RO",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD45RO"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_CD68",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD68"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_Ki67",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "Ki67"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_FOXP3",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "FOXP3"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_PD1",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "PD1"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_PDL1",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "PDL1"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_CD163",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD163"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_CD31",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD31"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_PanCK",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "PanCK"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_aSMA",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "aSMA"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "del_Ecadherin",
+   "family": "single",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA"
+   ],
+   "deleted": [
+    "Ecadherin"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_CD8",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD8"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_CD4",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD4"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_FOXP3",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "FOXP3"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_CD20",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD20"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_CD68",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD68"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_CD163",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD163"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_PanCK+Ecadherin",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "aSMA"
+   ],
+   "deleted": [
+    "PanCK",
+    "Ecadherin"
+   ],
+   "n_markers": 14
+  },
+  {
+   "name": "grp_CD31",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD31"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_aSMA",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "aSMA"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_CD45",
+   "family": "lineage_group",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD45"
+   ],
+   "n_markers": 15
+  },
+  {
+   "name": "grp_CD45+CD45RO",
+   "family": "lineage_group_extension",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD45",
+    "CD45RO"
+   ],
+   "n_markers": 14,
+   "note": "pre-declared extension; CD45 isoform rule"
+  },
+  {
+   "name": "rand75_s0",
+   "family": "random_retention",
+   "markers": [
+    "CD3e",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "aSMA"
+   ],
+   "deleted": [
+    "CD4",
+    "FOXP3",
+    "PanCK",
+    "Ecadherin"
+   ],
+   "n_markers": 12,
+   "note": "keep 12/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand50_s0",
+   "family": "random_retention",
+   "markers": [
+    "CD3e",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "Ki67",
+    "PDL1",
+    "CD163"
+   ],
+   "deleted": [
+    "CD4",
+    "CD68",
+    "FOXP3",
+    "PD1",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "n_markers": 8,
+   "note": "keep 8/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand25_s0",
+   "family": "random_retention",
+   "markers": [
+    "CD8",
+    "CD20",
+    "PDL1",
+    "CD163"
+   ],
+   "deleted": [
+    "CD3e",
+    "CD4",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "n_markers": 4,
+   "note": "keep 4/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand75_s1",
+   "family": "random_retention",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD45",
+    "CD45RO",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD31",
+    "PanCK",
+    "aSMA"
+   ],
+   "deleted": [
+    "CD20",
+    "CD68",
+    "CD163",
+    "Ecadherin"
+   ],
+   "n_markers": 12,
+   "note": "keep 12/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand50_s1",
+   "family": "random_retention",
+   "markers": [
+    "CD4",
+    "CD45",
+    "CD45RO",
+    "Ki67",
+    "FOXP3",
+    "PDL1",
+    "CD31",
+    "aSMA"
+   ],
+   "deleted": [
+    "CD3e",
+    "CD8",
+    "CD20",
+    "CD68",
+    "PD1",
+    "CD163",
+    "PanCK",
+    "Ecadherin"
+   ],
+   "n_markers": 8,
+   "note": "keep 8/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand25_s1",
+   "family": "random_retention",
+   "markers": [
+    "CD4",
+    "Ki67",
+    "PDL1",
+    "CD31"
+   ],
+   "deleted": [
+    "CD3e",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "FOXP3",
+    "PD1",
+    "CD163",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "n_markers": 4,
+   "note": "keep 4/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand75_s2",
+   "family": "random_retention",
+   "markers": [
+    "CD3e",
+    "CD8",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD4",
+    "CD20",
+    "CD45",
+    "FOXP3"
+   ],
+   "n_markers": 12,
+   "note": "keep 12/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand50_s2",
+   "family": "random_retention",
+   "markers": [
+    "CD3e",
+    "CD8",
+    "CD68",
+    "Ki67",
+    "PDL1",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD4",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "FOXP3",
+    "PD1",
+    "CD163",
+    "CD31"
+   ],
+   "n_markers": 8,
+   "note": "keep 8/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand25_s2",
+   "family": "random_retention",
+   "markers": [
+    "CD68",
+    "Ki67",
+    "PDL1",
+    "aSMA"
+   ],
+   "deleted": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "FOXP3",
+    "PD1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "Ecadherin"
+   ],
+   "n_markers": 4,
+   "note": "keep 4/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand75_s3",
+   "family": "random_retention",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD45",
+    "CD68",
+    "Ki67",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD20",
+    "CD45RO",
+    "FOXP3",
+    "PanCK"
+   ],
+   "n_markers": 12,
+   "note": "keep 12/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand50_s3",
+   "family": "random_retention",
+   "markers": [
+    "CD4",
+    "CD8",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD3e",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PanCK"
+   ],
+   "n_markers": 8,
+   "note": "keep 8/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand25_s3",
+   "family": "random_retention",
+   "markers": [
+    "CD4",
+    "PD1",
+    "CD163",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD3e",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PDL1",
+    "CD31",
+    "PanCK",
+    "aSMA"
+   ],
+   "n_markers": 4,
+   "note": "keep 4/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand75_s4",
+   "family": "random_retention",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "PanCK",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD45RO",
+    "CD163",
+    "CD31",
+    "aSMA"
+   ],
+   "n_markers": 12,
+   "note": "keep 12/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand50_s4",
+   "family": "random_retention",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "PanCK"
+   ],
+   "deleted": [
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "CD163",
+    "CD31",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "n_markers": 8,
+   "note": "keep 8/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "rand25_s4",
+   "family": "random_retention",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "PDL1",
+    "PanCK"
+   ],
+   "deleted": [
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "CD163",
+    "CD31",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "n_markers": 4,
+   "note": "keep 4/16; nested within seed (first k of one permutation)"
+  },
+  {
+   "name": "orion_cap_hartmann",
+   "family": "external_intersection",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD45",
+    "CD68",
+    "Ki67",
+    "PD1",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD20",
+    "CD45RO",
+    "FOXP3",
+    "PDL1",
+    "CD163"
+   ],
+   "n_markers": 11
+  },
+  {
+   "name": "orion_cap_hoch",
+   "family": "external_intersection",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PDL1",
+    "aSMA"
+   ],
+   "deleted": [
+    "PD1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "Ecadherin"
+   ],
+   "n_markers": 11
+  },
+  {
+   "name": "orion_cap_immucan",
+   "family": "external_intersection",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD45",
+    "CD31",
+    "PanCK"
+   ],
+   "n_markers": 13
+  },
+  {
+   "name": "orion_cap_liu",
+   "family": "external_intersection",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD68",
+    "CD31",
+    "PanCK"
+   ],
+   "deleted": [
+    "CD45RO",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "n_markers": 8
+  },
+  {
+   "name": "orion_cap_maps",
+   "family": "external_intersection",
+   "markers": [
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD45RO",
+    "CD68",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA"
+   ],
+   "deleted": [
+    "CD3e",
+    "Ki67",
+    "Ecadherin"
+   ],
+   "n_markers": 13
+  },
+  {
+   "name": "orion_cap_schurch",
+   "family": "external_intersection",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45",
+    "CD68",
+    "FOXP3",
+    "CD163",
+    "CD31",
+    "PanCK",
+    "aSMA"
+   ],
+   "deleted": [
+    "CD45RO",
+    "Ki67",
+    "PD1",
+    "PDL1",
+    "Ecadherin"
+   ],
+   "n_markers": 11
+  },
+  {
+   "name": "orion_cap_tietscher",
+   "family": "external_intersection",
+   "markers": [
+    "CD3e",
+    "CD4",
+    "CD8",
+    "CD20",
+    "CD45RO",
+    "CD68",
+    "Ki67",
+    "FOXP3",
+    "PD1",
+    "PDL1",
+    "CD31",
+    "PanCK",
+    "aSMA",
+    "Ecadherin"
+   ],
+   "deleted": [
+    "CD45",
+    "CD163"
+   ],
+   "n_markers": 14
+  }
+ ],
+ "protocol": {
+  "alpha": 0.1,
+  "n_min": 10,
+  "quantile": "k-th smallest score, k = ceil((n+1)(1-alpha)); +inf if k > n",
+  "primary": "calibrate on crc_cal (2 Orion patients) masked to P, evaluate on crc_test (5 Orion patients) masked to P",
+  "exchangeable_control": "calibrate on a random half of crc_test (seed 0) masked to P, evaluate on the other half; added after task 2 showed crc_cal->crc_test is not exchangeable for round0 even on the full panel; reported separately, never mixed",
+  "backbones": {
+   "round0": "primary (retrained round0_xgb_v6_leakfree, X_arc)",
+   "v6crc": "secondary (v6.0_crconly, X_gmm 160-D with presence bits)"
+  },
+  "metrics": [
+   "exact coverage Pr[pi_P(y) in C] (identifiable cells) overall and per stratum",
+   "leaf coverage Pr[y in C] on cells with y in A(P)",
+   "ancestor-credited coverage",
+   "mean |C|",
+   "singleton rate",
+   "leaf-resolved rate",
+   "abstention (empty) rate",
+   "inadmissible set mass",
+   "Wilson cell-level CIs (not patient-clustered)"
+  ]
+ }
+}

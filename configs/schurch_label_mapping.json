@@ -1,0 +1,169 @@
+{
+ "method": "exact rebuild of schurch_40d rows (sample(100000, random_state=42)); crosstab of ClusterName vs cache y",
+ "excluded_unmapped_labels": {
+  "dirt": 7357,
+  "undefined": 6524,
+  "immune cells / vasculature": 2153,
+  "tumor cells / immune cells": 1797
+ },
+ "max_abs_dXarc": 9.5367431640625e-07,
+ "mapping": {
+  "B cells": {
+   "target": "B_Cell",
+   "pure": true,
+   "n_in_cache_sample": 5549
+  },
+  "CD11b+ monocytes": {
+   "target": "Immune_Other",
+   "pure": true,
+   "n_in_cache_sample": 336
+  },
+  "CD11b+CD68+ macrophages": {
+   "target": "Myeloid",
+   "pure": true,
+   "n_in_cache_sample": 643
+  },
+  "CD11c+ DCs": {
+   "target": "Dendritic_Cell",
+   "pure": true,
+   "n_in_cache_sample": 160
+  },
+  "CD163+ macrophages": {
+   "target": "Macrophage_CD163pos",
+   "pure": true,
+   "n_in_cache_sample": 9
+  },
+  "CD3+ T cells": {
+   "target": "T_Lineage",
+   "pure": true,
+   "n_in_cache_sample": 84
+  },
+  "CD4+ T cells": {
+   "target": "Helper_T_Cell",
+   "pure": true,
+   "n_in_cache_sample": 949
+  },
+  "CD4+ T cells CD45RO+": {
+   "target": "Helper_T_Cell",
+   "pure": true,
+   "n_in_cache_sample": 6898
+  },
+  "CD4+ T cells GATA3+": {
+   "target": "Helper_T_Cell",
+   "pure": true,
+   "n_in_cache_sample": 26
+  },
+  "CD68+ macrophages": {
+   "target": "Myeloid",
+   "pure": true,
+   "n_in_cache_sample": 869
+  },
+  "CD68+ macrophages GzmB+": {
+   "target": "Myeloid",
+   "pure": true,
+   "n_in_cache_sample": 67
+  },
+  "CD68+CD163+ macrophages": {
+   "target": "Macrophage_CD163pos",
+   "pure": true,
+   "n_in_cache_sample": 16423
+  },
+  "CD8+ T cells": {
+   "target": "Cytotoxic_T_Cell",
+   "pure": true,
+   "n_in_cache_sample": 6995
+  },
+  "NK cells": {
+   "target": "NK_Cell",
+   "pure": true,
+   "n_in_cache_sample": 128
+  },
+  "Tregs": {
+   "target": "Regulatory_T_Cell",
+   "pure": true,
+   "n_in_cache_sample": 1214
+  },
+  "adipocytes": {
+   "target": "Stromal",
+   "pure": true,
+   "n_in_cache_sample": 734
+  },
+  "granulocytes": {
+   "target": "Neutrophil",
+   "pure": true,
+   "n_in_cache_sample": 9025
+  },
+  "immune cells": {
+   "target": "Immune_Other",
+   "pure": true,
+   "n_in_cache_sample": 1362
+  },
+  "lymphatics": {
+   "target": "Endothelial",
+   "pure": true,
+   "n_in_cache_sample": 141
+  },
+  "nerves": {
+   "target": "Stromal",
+   "pure": true,
+   "n_in_cache_sample": 263
+  },
+  "plasma cells": {
+   "target": "Plasma_Cell",
+   "pure": true,
+   "n_in_cache_sample": 3635
+  },
+  "smooth muscle": {
+   "target": "Stromal",
+   "pure": true,
+   "n_in_cache_sample": 11482
+  },
+  "stroma": {
+   "target": "Stromal",
+   "pure": true,
+   "n_in_cache_sample": 8432
+  },
+  "tumor cells": {
+   "target": "Epithelial",
+   "pure": true,
+   "n_in_cache_sample": 19616
+  },
+  "vasculature": {
+   "target": "Endothelial",
+   "pure": true,
+   "n_in_cache_sample": 4960
+  }
+ },
+ "all_pure": true,
+ "raw_label_counts": {
+  "tumor cells": 47602,
+  "CD68+CD163+ macrophages": 39596,
+  "smooth muscle": 27817,
+  "granulocytes": 22144,
+  "stroma": 20139,
+  "CD8+ T cells": 16675,
+  "CD4+ T cells CD45RO+": 16661,
+  "B cells": 13043,
+  "vasculature": 11725,
+  "plasma cells": 8510,
+  "dirt": 7357,
+  "undefined": 6524,
+  "immune cells": 3127,
+  "Tregs": 2791,
+  "CD4+ T cells": 2303,
+  "immune cells / vasculature": 2153,
+  "CD68+ macrophages": 2108,
+  "adipocytes": 1811,
+  "tumor cells / immune cells": 1797,
+  "CD11b+CD68+ macrophages": 1500,
+  "CD11b+ monocytes": 815,
+  "nerves": 659,
+  "CD11c+ DCs": 400,
+  "lymphatics": 328,
+  "NK cells": 323,
+  "CD3+ T cells": 189,
+  "CD68+ macrophages GzmB+": 183,
+  "CD4+ T cells GATA3+": 67,
+  "CD163+ macrophages": 38
+ }
+}
