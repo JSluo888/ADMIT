@@ -15,6 +15,11 @@ pip install -e ".[experiments,figures]"
 python examples/toy_demo.py --delete CD8
 ```
 
+## Use as an agent skill
+
+`skill/SKILL.md` describes ADMIT for AI coding agents. Copy the folder into the agent's skills directory, for
+example `~/.claude/skills/admit` (Claude Code) or `~/.codex/skills/admit` (Codex).
+
 ## Reproducing the paper
 
 `experiments/` holds the experiment scripts and `figures/` the figure scripts. Set `ADMIT_DATA_ROOT` to the
